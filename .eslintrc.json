@@ -9,6 +9,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "import/extensions": ["error","never"],
     "react/prefer-stateless-function": "off",
     "indent": ["error", 4],
     "react/react-in-jsx-scope": "off",
@@ -17,5 +18,16 @@
     "arrow-body-style": "off",
     "no-use-before-define": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts",".tsx"] }]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["pages", "./src/pages"],
+          ["~", "./src"]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

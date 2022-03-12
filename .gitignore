@@ -1,0 +1,14 @@
+/.idea/
+/node_modules/
+/bower_components/
+/dist/
+/build/
+/coverage/
+/tmp/
+/logs/
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+/yarn-lock.json
+/yarn.lock
+/package-lock.json

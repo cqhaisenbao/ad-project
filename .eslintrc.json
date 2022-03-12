@@ -15,6 +15,7 @@
     "resct/react-in-tsx-scope": "off",
     "react/jsx-indent": ["error", 4],
     "arrow-body-style": "off",
+    "no-use-before-define": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts",".tsx"] }]
   }
 }

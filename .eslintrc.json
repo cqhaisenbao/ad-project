@@ -9,6 +9,8 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-unused-vars": "off",
+    "no-console": 0,
     "import/extensions": ["error","never"],
     "react/prefer-stateless-function": "off",
     "indent": ["error", 4],

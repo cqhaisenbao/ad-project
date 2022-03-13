@@ -22,6 +22,12 @@ const webpackConfigDev = {
     ],
     devtool: 'eval-source-map',
     devServer: {
+        proxy: {
+            '/api': {
+                target: 'http://127.0.0.1:4523/mock/724740/',
+                changeOrigin: true,
+            },
+        },
         contentBase: path.join(__dirname, '.'),
         host: '0.0.0.0',
         port: 8080,

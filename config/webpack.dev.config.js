@@ -3,8 +3,11 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
 const OpenBrowserPlugin = require('open-browser-webpack4-plugin');
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 const webpackConfigBase = require('./webpack.base.config');
 const mockMiddleware = require('./mock.config');
+
+const smp = new SpeedMeasurePlugin();
 
 const webpackConfigDev = {
     mode: 'development',
@@ -42,4 +45,4 @@ const webpackConfigDev = {
     },
 };
 
-module.exports = merge(webpackConfigBase, webpackConfigDev);
+module.exports = smp.wrap(merge(webpackConfigBase, webpackConfigDev));

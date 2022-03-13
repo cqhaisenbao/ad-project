@@ -29,7 +29,8 @@
       "alias": {
         "map": [
           ["pages", "./src/pages"],
-          ["~", "./src"]
+          ["~", "./src"],
+          ["@utils", "./src/utils"]
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
